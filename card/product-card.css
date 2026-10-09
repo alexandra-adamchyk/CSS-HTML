@@ -1,0 +1,109 @@
+/* CSS Styling:
+Layout & Sizing: Set a maximum width for the card*, rounded corners*, padding*, a subtle drop shadow*, and a background color*.
+Typography: Style the *title, *description, and *price with distinct *font sizes, *line heights, *font weights, and *text colors.
+Flexbox Layout: Use Flexbox to align all card elements vertically with consistent spacing.*
+Image Styling: Ensure the image fills the card width properly without distortion and matches the top rounded corners.*
+Interactive & Hover Effects:
+Card Zoom Effect: Add a smooth hover animation so that the card slightly scales up and increases its shadow depth when hovered over.
+Button Hover Effect: Style the button with custom colors, padding, and rounded corners. Add a smooth color transition and pointer cursor on hover. */
+
+
+/* body{
+    background-color: aqua;
+} */
+
+#card{
+    margin: 60px auto;
+    max-width:30%;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 30px 20px;
+    background-color: rgb(247, 243, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#card:hover{
+    box-shadow: 4px 4px 10px rgb(115, 112, 112);
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+img{
+    width: 100%;
+    display: block;
+    border: 0px;
+    border-radius: 5px;
+
+}
+
+/* p{
+    max-width: 3em;
+    
+} */
+
+#title{
+    font-size: 20px;
+    font-weight: 700; /* min 100 max 900 */
+    line-height: 15px;
+    color: rgb(20, 20, 20);
+}
+
+#description{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    color: rgb(75, 71, 71);
+    overflow-wrap: normal;
+    word-break: break-all;
+}
+
+#price{
+    font-size: 20px;
+    font-weight: 700; /* min 100 max 900 */
+    line-height: 15px;
+    color: rgb(20, 20, 20);
+}
+
+button{
+    background-color: deeppink;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: 30px black;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    box-shadow: 5px 5px whitesmoke;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+/* 
+px - не адаптивний
+
+% - від батьківського елемента
+
+em 
+- 1 em = 16 px
+- зручний в адапт. верстці, тому що 1 em = розміру шрифта батьківського елемента 
+
+rem
+- залежить від розміру корневого елементу (html)
+- для базових розмірів тексту та відступів
+
+vw
+- дорівнює 1% від ширини екрана браузера
+- використовується в адаптивних блоках
+
+vh
+- дорівнює 1% від ширини екрана браузера
+- використовується в адаптивних блоках
+
+
+dvw
+dvh
+*/

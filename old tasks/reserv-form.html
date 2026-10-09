@@ -1,0 +1,24 @@
+<!-- Task: Restaurant Table / Hotel Room Reservation Form
+Objective: Learn how to create HTML forms using specialized input types, structural grouping tags, and field validation attributes.
+Task: Create a web page with a table or room reservation form in HTML.
+Include the following specialized input types:
+Date selector: <input type="date"> for picking the arrival or reservation date.*
+Time selector: <input type="time"> for choosing the arrival or dining time.*
+Guest count: <input type="number"> with minimum (min="1") and maximum (max="10") limits for the number of guests.*
+Color picker: <input type="color"> for choosing a table decoration or interior accent theme. -->
+
+
+<form action="#">
+    <label for="user-date">Pick your arrival or reservation date:</label><br>
+    <input type="date" required id="user-date" name="user-date"><br><br>
+
+    <label for="user-time">Choose your the arrival time:</label><br>
+    <input type="time" required id="user-time" name="user-time"><br><br>
+
+    <label for="number-guests">Number of guests:</label><br>
+    <input type="number" value="2" min="1" max="10" id="number-guests" name="number-guests"><br><br>
+
+    <label for="theme">Choose interior accent theme:</label><br>
+    <input type="color" id="theme" name="theme"><br><br>
+    <button type="submit">Reserve</button>
+</form>
