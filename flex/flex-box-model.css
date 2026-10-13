@@ -1,3 +1,35 @@
 .card-box{
 display: flex;
+gap: 60px;
+padding: 10px 0 15px 0;
+}
+
+.card{
+    width: calc(33.3% - 60px);
+
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.box-title{
+display: flex;
+justify-content: space-between;
+}
+
+.rating-box{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.ratings-img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+@media{
+    max-width: ;
 }
